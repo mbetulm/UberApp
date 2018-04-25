@@ -1,0 +1,4 @@
+#Wed Apr 25 13:18:07 EET 2018
+base.0=C\:\\Project\\AndroidStudioProject\\UberApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\334
+path.0=classes.dex
+renamed.0=classes.dex
