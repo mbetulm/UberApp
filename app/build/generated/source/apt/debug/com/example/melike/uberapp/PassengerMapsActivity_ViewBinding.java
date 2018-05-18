@@ -19,9 +19,9 @@ import java.lang.Override;
 public class PassengerMapsActivity_ViewBinding implements Unbinder {
   private PassengerMapsActivity target;
 
-  private View view2131230876;
+  private View view2131230887;
 
-  private View view2131230828;
+  private View view2131230835;
 
   @UiThread
   public PassengerMapsActivity_ViewBinding(PassengerMapsActivity target) {
@@ -38,7 +38,7 @@ public class PassengerMapsActivity_ViewBinding implements Unbinder {
     target.viewPager = Utils.findRequiredViewAsType(source, R.id.viewPager, "field 'viewPager'", ViewPager.class);
     view = Utils.findRequiredView(source, R.id.rlwhere, "field 'rlWhere' and method 'openPlacesView'");
     target.rlWhere = Utils.castView(view, R.id.rlwhere, "field 'rlWhere'", RelativeLayout.class);
-    view2131230876 = view;
+    view2131230887 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class PassengerMapsActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ivHome, "field 'ivHome' and method 'showViewPagerWithTransition'");
     target.ivHome = Utils.castView(view, R.id.ivHome, "field 'ivHome'", ImageView.class);
-    view2131230828 = view;
+    view2131230835 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -71,9 +71,9 @@ public class PassengerMapsActivity_ViewBinding implements Unbinder {
     target.ivHome = null;
     target.tvWhereto = null;
 
-    view2131230876.setOnClickListener(null);
-    view2131230876 = null;
-    view2131230828.setOnClickListener(null);
-    view2131230828 = null;
+    view2131230887.setOnClickListener(null);
+    view2131230887 = null;
+    view2131230835.setOnClickListener(null);
+    view2131230835 = null;
   }
 }

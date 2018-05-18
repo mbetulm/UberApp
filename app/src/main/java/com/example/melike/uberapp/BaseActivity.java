@@ -24,6 +24,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,10 +77,10 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
     public static final int LOCATION_PERMISSION_REQUEST_CODE = 858;
 
     GoogleMap mMap;
-    Location userLocation;
+    public static Location userLocation;
     private FusedLocationProviderClient mFusedLocationClient;
     public static final int PLACE_AUTOCOMPLETE_REQUEST_CODE = 100;
-    private LatLng destination;
+    public static LatLng destination;
     private List<LatLng> listLatLng = new ArrayList<>();
     private Polyline blackPolyLine, greyPolyLine;
     public static Double c; //Distance
@@ -88,10 +89,12 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
 
 
     }
@@ -231,7 +234,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
         LatLng position= new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
 
         c = CalculationByDistance(position,destination);
-        Toast.makeText(BaseActivity.this,c.toString(),Toast.LENGTH_LONG).show();
+        //Toast.makeText(BaseActivity.this,c.toString(),Toast.LENGTH_LONG).show();
         options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
         mMap.addMarker(options);
 
@@ -241,7 +244,9 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
         xl=Double.toString(BaseActivity.c*9);
         hıre=Double.toString(BaseActivity.c*15);
 
-        new GetDrivers().execute("http://192.168.151.160/Service1.svc/GetDrivers");
+        new GetDriver().execute("http://192.168.151.160/Service1.svc/GetDrivers");
+        PassengerMapsActivity.ivHome2.setEnabled(true);
+
 
     }
     protected abstract void setUpPolyLine();
@@ -552,7 +557,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
 
         }
     };
-    class GetDrivers extends AsyncTask<String, Void, String> {
+    class GetDriver extends AsyncTask<String, Void, String> {
         String status = null;
 
 
@@ -595,6 +600,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
             super.onPostExecute(result);
 
             if (result != null) {
+
                 try {
 
                     JSONArray jsonArray = new JSONArray(result);
@@ -604,14 +610,25 @@ public abstract class BaseActivity extends AppCompatActivity implements OnMapRea
                         String lang = jsonArray.getJSONObject(i).getString("Longitude").trim();
                         String cartype = jsonArray.getJSONObject(i).getString("CarType").trim();
                         String price = jsonArray.getJSONObject(i).getString("Price").trim();
+                        String name= jsonArray.getJSONObject(i).getString("Name").trim();
+                        String phoneNumber= jsonArray.getJSONObject(i).getString("PhoneNumber").trim();
+
 
                         Double x= new Double(lat);
                         Double y= new Double(lang);
 
                         mMap.addMarker(new MarkerOptions().position(new LatLng(x,y)).title(cartype).icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
 
+                        Driver d= new Driver();
+                        d.id=Integer.parseInt(id);
+                        d.lat=lat;
+                        d.lang=lang;
+                        d.carType=cartype;
+                        d.phoneNumber=phoneNumber;
+                        d.price=price;
+                        d.name=name;
+                        PassengerMapsActivity.list.add(d);
                     }
-
 
                 } catch (Exception ex) {
                     ex.printStackTrace();

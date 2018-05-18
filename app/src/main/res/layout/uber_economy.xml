@@ -38,31 +38,6 @@
             android:text="UberGo"
             android:textColor="@color/black"
             android:textSize="16sp" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/Eco_priceLayout">
-
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Price"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:layout_marginLeft="30dp"/>
-
-            <TextView
-                android:id="@+id/txtEcoPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginLeft="100dp"/>
-        </LinearLayout>
-
 
     </LinearLayout>
 

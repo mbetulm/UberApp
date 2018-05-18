@@ -25,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     Button signIn;
     TextView signUp;
     String Email, Pwd;
+    TextView phoneSignUp;
+    public static String girenDriver;
+    public static String girenPassenger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,20 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.txtPassword);
         signIn = (Button) findViewById(R.id.btnLogin);
         signUp = (TextView) findViewById(R.id.tvSignUp);
+        phoneSignUp=(TextView)findViewById(R.id.PhoneSignUp);
+
+        if(MainActivity.isPassenger==false){
+            phoneSignUp.setVisibility(TextView.GONE);
+        }
+
+        phoneSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, LoginWithPhone.class);
+                startActivity(i);
+            }
+        });
+
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,11 +71,13 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (MainActivity.isPassenger == true) {
 
+                    phoneSignUp.setVisibility(TextView.VISIBLE);
                     new UserLogin().execute("http://192.168.151.160/Service1.svc/LoginGetPassenger");
 
                     //new UserLogin().execute("http://192.168.1.188/Service1.svc/LoginGetPassenger");
 
                 } else {
+
                     new UserLogin().execute("http://192.168.151.160/Service1.svc/LoginGetDriver");
 
                     //new UserLogin().execute("http://192.168.1.188/Service1.svc/LoginGetDriver");
@@ -114,6 +133,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     JSONArray jsonArray = new JSONArray(result);
                     for (int i = 0; i < jsonArray.length(); i++) {
+                        String id = jsonArray.getJSONObject(i).getString("Id").trim();
                         String pwd = jsonArray.getJSONObject(i).getString("Password").trim();
                         String name = jsonArray.getJSONObject(i).getString("FullName").trim();
                         String email = jsonArray.getJSONObject(i).getString("Email").trim();
@@ -122,11 +142,13 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         if (Email.trim().equals(email) && Pwd.trim().equals(pwd) && userType.toLowerCase().equals("passenger")) {
+                            girenPassenger=id;
                             Intent intent = new Intent(LoginActivity.this, PassengerMapsActivity.class);
                             startActivity(intent);
                             Toast.makeText(LoginActivity.this, "Passenger Successful login", Toast.LENGTH_LONG).show();
                             break;
                         } else if(Email.trim().equals(email) && Pwd.trim().equals(pwd) && userType.toLowerCase().equals("driver")) {
+                            girenDriver=id;
                             Intent intent = new Intent(LoginActivity.this, DriverMapsActivity.class);
                             startActivity(intent);
                             Toast.makeText(LoginActivity.this, "Driver Successful login", Toast.LENGTH_LONG).show();

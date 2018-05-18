@@ -32,24 +32,24 @@ public final class R {
         public static final int progress_arc_stroke_width = 0x7f0600a3;
     }
     public static final class drawable {
-        public static final int ic_done = 0x7f070083;
-        public static final int oval_complete = 0x7f070095;
+        public static final int ic_done = 0x7f070086;
+        public static final int oval_complete = 0x7f07009a;
     }
     public static final class id {
         public static final int completeFabIcon = 0x7f08003c;
         public static final int completeFabRoot = 0x7f08003d;
-        public static final int mini = 0x7f08007b;
-        public static final int normal = 0x7f080080;
+        public static final int mini = 0x7f080086;
+        public static final int normal = 0x7f08008b;
     }
     public static final class integer {
         public static final int default_cycle_duration = 0x7f090006;
     }
     public static final class layout {
-        public static final int complete_fab = 0x7f0a0023;
+        public static final int complete_fab = 0x7f0a0025;
     }
     public static final class string {
-        public static final int app_name = 0x7f0d001f;
-        public static final int child_count_error = 0x7f0d0023;
+        public static final int app_name = 0x7f0e001f;
+        public static final int child_count_error = 0x7f0e0023;
     }
     public static final class styleable {
         public static final int[] FABProgressCircle = { 0x7f03002a, 0x7f03002b, 0x7f03005c, 0x7f0300a3, 0x7f03013e, 0x7f030141 };

@@ -15,25 +15,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         passenger =(Button) findViewById(R.id.btnPassenger);
         driver=(Button) findViewById(R.id.btnDriver);
 
         passenger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 isPassenger=true;
                 Intent i= new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(i);
+
             }
         });
 
         driver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 isPassenger=false;
                 Intent i= new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(i);
+
             }
         });
     }

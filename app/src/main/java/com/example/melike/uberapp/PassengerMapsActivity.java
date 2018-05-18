@@ -3,9 +3,15 @@ package com.example.melike.uberapp;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ArgbEvaluator;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.transition.TransitionManager;
@@ -67,6 +73,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PassengerMapsActivity  extends BaseActivity {
 
+    public static List<Driver> list = new ArrayList<Driver>();
+
     @BindView(R.id.rootFrame)
     FrameLayout rootFrame;
 
@@ -90,7 +98,7 @@ public class PassengerMapsActivity  extends BaseActivity {
     private LatLng destination;
 
 
-
+    public static ImageView ivHome2;
 
 
 
@@ -99,6 +107,8 @@ public class PassengerMapsActivity  extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passenger_maps);
+
+        ivHome2=findViewById(R.id.ivHome);
 
 
 
@@ -125,13 +135,11 @@ public class PassengerMapsActivity  extends BaseActivity {
         viewPager.addOnPageChangeListener(pageChangeListener);
         viewPager.setPageTransformer(true, pageTransformer);
 
-
+        ivHome2.setEnabled(false);
 
         //mMap.addMarker(new MarkerOptions().position(new LatLng(x,y)).title(cartype).icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
 
     }
-
-
 
 
     ViewPager.PageTransformer pageTransformer = new ViewPager.PageTransformer() {
@@ -213,6 +221,7 @@ public class PassengerMapsActivity  extends BaseActivity {
 
 
     }
+
 
     @OnClick(R.id.rlwhere)
     void openPlacesView() {
@@ -296,6 +305,7 @@ public class PassengerMapsActivity  extends BaseActivity {
                             }
                         }
 
+
                         @Override
                         public void onFailure(@NonNull Call<JsonObject> call, Throwable t) {
 
@@ -329,7 +339,29 @@ public class PassengerMapsActivity  extends BaseActivity {
         startActivity(new Intent(this, LoginActivity.class));
         finish();
     }
+    /*public static void sendNotification(View view) {
 
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(this);
+
+
+
+        Intent intent = new Intent(this,DriverMapsActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        mBuilder.setContentIntent(pendingIntent);
+
+        mBuilder.setSmallIcon(R.drawable.car);
+        mBuilder.setContentTitle("My notification");
+        mBuilder.setContentText("Hello World!");
+
+        NotificationManager mNotificationManager =
+
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        mNotificationManager.notify(001, mBuilder.build());
+    }
+*/
 
 
     class GetDrivers extends AsyncTask<String, Void, String> {
@@ -375,6 +407,7 @@ public class PassengerMapsActivity  extends BaseActivity {
             super.onPostExecute(result);
 
             if (result != null) {
+
                 try {
 
                     JSONArray jsonArray = new JSONArray(result);
@@ -384,12 +417,17 @@ public class PassengerMapsActivity  extends BaseActivity {
                         String lang = jsonArray.getJSONObject(i).getString("Longitude").trim();
                         String cartype = jsonArray.getJSONObject(i).getString("CarType").trim();
                         String price = jsonArray.getJSONObject(i).getString("Price").trim();
+                        String name= jsonArray.getJSONObject(i).getString("Name").trim();
+                        String phoneNumber= jsonArray.getJSONObject(i).getString("PhoneNumber").trim();
+
 
                         Double x= new Double(lat);
                         Double y= new Double(lang);
 
                         mMap.addMarker(new MarkerOptions().position(new LatLng(x,y)).title(cartype).icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
 
+                        //Driver d= new Driver(Integer.parseInt(id),name,lat,lang,cartype,price,phoneNumber);
+                       // list.add(d);
                     }
 
 
@@ -403,3 +441,23 @@ public class PassengerMapsActivity  extends BaseActivity {
 
 
 }
+
+class Driver{
+    int id;
+    String name;
+    String lat;
+    String lang;
+    String carType;
+    String price;
+    String phoneNumber;
+
+    /*public Driver(int id, String name, String lat, String lang, String carType, String price,String phoneNumber){
+        id=this.id;
+        name=this.name;
+        lat=this.lat;
+        lang=this.lang;
+        carType=this.carType;
+        price=this.price;
+        phoneNumber=this.phoneNumber;*/
+
+    }

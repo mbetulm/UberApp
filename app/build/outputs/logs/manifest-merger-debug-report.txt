@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [com.jakewharton:butterknife:8.7.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\butterknife-8.7.0.aar\f66c5903b2a5fe3b90cebfa7a358b1e9\AndroidManifest.xml:2:1-7:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\2cdb6ce74eddd26f43de91866fecd7de\AndroidManifest.xml:15:1-21:12
 MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\701b814acaaddff79432345faeb6f522\AndroidManifest.xml:2:1-16:12
@@ -29,20 +29,20 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Melike\.g
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\02f39b5173daf4ff3e1016922e138466\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\fcca07f375b6f2dc5ab1b2450c54584e\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e8297792831183df9656d6db330c61da\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -79,7 +79,7 @@ ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:11:22-76
 application
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:13:5-47:19
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:14:5-50:19
 MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\701b814acaaddff79432345faeb6f522\AndroidManifest.xml:11:5-14:19
 MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\701b814acaaddff79432345faeb6f522\AndroidManifest.xml:11:5-14:19
 MERGED from [com.google.android.gms:play-services-places:11.0.4] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\play-services-places-11.0.4.aar\d65fffe4221bf3eebebc19a16a35cd20\AndroidManifest.xml:18:5-19
@@ -127,57 +127,65 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Melike\.gradle\
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e8297792831183df9656d6db330c61da\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Melike\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e8297792831183df9656d6db330c61da\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:17:9-41
 	android:roundIcon
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:20:9-40
 activity#com.example.melike.uberapp.MainActivity
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:20:9-26:20
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:20:19-47
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:21:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:25:27-74
 activity#com.example.melike.uberapp.LoginActivity
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:27:9-51
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:28:9-51
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:27:19-48
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:28:19-48
 activity#com.example.melike.uberapp.SignUpActivity
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:28:9-52
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:29:9-52
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:28:19-49
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:29:19-49
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:37:9-39:55
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:38:9-40:55
 	android:value
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:39:13-52
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:40:13-52
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:38:13-58
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:39:13-58
 activity#com.example.melike.uberapp.PassengerMapsActivity
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:41:9-43:69
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:42:9-44:69
 	android:label
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:43:13-66
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:44:13-66
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:42:13-50
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:43:13-50
 activity#com.example.melike.uberapp.DriverMapsActivity
-ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:44:9-46:75
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:45:9-47:66
 	android:label
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:46:13-63
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:47:13-63
 	android:name
-		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:45:13-47
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:46:13-47
+activity#com.example.melike.uberapp.LoginWithPhone
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:48:9-52
+	android:name
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:48:19-49
+activity#com.example.melike.uberapp.PasswordActivity
+ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:49:9-63
+	android:name
+		ADDED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml:49:19-51
 uses-sdk
 INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Project\AndroidStudioProject\UberApp\app\src\main\AndroidManifest.xml
